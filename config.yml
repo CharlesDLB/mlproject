@@ -1,0 +1,20 @@
+data: 
+  raw_data: data/4_raw/raw_data.parquet
+
+
+model:
+  name: LGBMRegressor
+  
+  params:
+    boosting_type
+    num_leaves
+    max_depth
+    learning_rate
+    n_estimators
+    reg_alpha
+    reg_lambda
+    random_state
+    n_jobs
+
+  store_path: artifacts/models/
+

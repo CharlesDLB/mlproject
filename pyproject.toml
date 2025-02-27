@@ -1,0 +1,27 @@
+[project]
+name = "mlproject"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cdlb-logger",
+    "lightgbm>=4.6.0",
+    "meteostat>=1.6.8",
+    "mlflow>=2.20.2",
+    "numpy>=2.2.3",
+    "optuna>=4.2.1",
+    "optunahub>=0.2.0",
+    "pandas>=2.2.3",
+    "plotly>=6.0.0",
+    "python-dotenv>=1.0.1",
+    "python-json-logger>=3.2.1",
+    "seaborn>=0.13.2",
+    "statsmodels>=0.14.4",
+]
+
+[tool.uv.workspace]
+members = ["src/local_test", "src/cdlb_logger"]
+
+[tool.uv.sources]
+cdlb-logger = { workspace = true }
